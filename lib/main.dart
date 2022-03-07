@@ -22,6 +22,13 @@ class HomeWidget extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return const Material(child: Center(child: Text('flutterando'))); //const palavra reservada
+    return Scaffold(appBar: AppBar(
+      title: const Text('Home'),
+    ),
+    body: const Center(child: Text("flutterando"),),
+    floatingActionButton: FloatingActionButton(
+      child: const Icon(Icons.add), onPressed: () {
+      print('clicou');
+    }),); //const palavra reservada
   }
 }
